@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Precios Oficiales</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e3f2fd;
+            background-image: url('emirates.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to right, rgba(0, 123, 255, 0.85), rgba(0, 75, 150, 0.85));
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: slideDown 1.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 4px;
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #f1f1f1;
+            font-size: 1.4em;
+        }
+
+        .highlight {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 60px;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .image-box {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            width: 260px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(44, 62, 80, 0.95);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .footer-contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-sociales a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-sociales a:hover {
+            color: #f39c12;
+        }
+
+        .footer-contacto p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .footer-contacto p i {
+            margin-right: 10px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-contenedor {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lista de Precios Oficiales</h1>
+        <p><span class="highlight">Consulta la lista</span> y obtén la mejor información.</p>
+    </header>
+
+    <div class="image-container">
+        <div class="image-box">
+            <img src="matematicas.jpg" alt="Tareas de cálculo">
+            <div class="description">Tareas de cálculo: $100 M.X.N</div>
+        </div>
+        <div class="image-box">
+            <img src="examenes.jpg" alt="Exámenes de cálculo">
+            <div class="description">Exámenes de cálculo: $500 M.X.N</div>
+        </div>
+        <div class="image-box">
+            <img src="asesorias.jpg" alt="Asesorías personales">
+            <div class="description">Asesorías por hora: $100 M.X.N</div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="https://www.instagram.com/raul_yokii_9/profilecard/?igsh=dnQycjI2NXp0ZmR1" target="_blank">
+            <button class="btn">Contactar para más información</button>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-sociales">
+                <a href="https://www.instagram.com/raul_yokii_9/profilecard/?igsh=dnQycjI2NXp0ZmR1" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+
+            <div class="footer-contacto">
+                <p><i class="fas fa-envelope"></i> Correo: raulsanjoseitho@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Teléfono: 4481015555</p>
+                <p><i class="fab fa-instagram"></i> Instagram: raul_yokii_9</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 Catálogo realizado por: Ing. Raúl De Jesús Ugalde. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

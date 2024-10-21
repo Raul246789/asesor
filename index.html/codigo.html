@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Pie de Página Moderno</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .contenido {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para el banner de bienvenida */
+        .bienvenida {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        marquee {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Botón estilizado */
+        .btn-siguiente {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-siguiente:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 14px; /* Tamaño de texto reducido */
+        }
+
+        .footer-contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-contenedor div {
+            margin: 5px 0; /* Espacio reducido entre secciones */
+        }
+
+        .footer-links a, 
+        .footer-sociales a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px; /* Texto ligeramente más pequeño */
+            transition: color 0.3s ease;
+        }
+
+        .footer-sociales a i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        .footer-contacto p {
+            margin: 2px 0;
+        }
+
+        .copyright {
+            margin-top: 10px;
+            color: #bdc3c7;
+            font-size: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-contenedor {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer-links, 
+            .footer-sociales {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenido">
+        <div class="bienvenida">
+            <marquee behavior="alternate" bgcolor="white" direction="center" width="100%" height="40">
+                Bienvenido a nuestra pagina oficial
+            </marquee>
+        </div>
+
+        <!-- Botón estilizado para ir a la siguiente página -->
+        <a href="paginasiguiente.html" class="btn-siguiente">Siguiente hoja</a>
+    </div>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-links">
+                
+            </div>
+            
+            <div class="footer-sociales">
+                <a href="https://www.instagram.com/raul_yokii_9/profilecard/?igsh=dnQycjI2NXp0ZmR1" target="_blank">
+                    <i class="fab fa-instagram"></i> Da click para ir a Instagram
+                </a>
+            </div>
+
+            <div class="footer-contacto">
+                <p>Gmail: raulsanjoseitho@gmail.com</p>
+                <p>Teléfono: 4481015555</p>
+                <p>Instagram: raul_yokii_9</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 Catálogo realizado por: Ing Raul De Jesus Ugalde. Todos los derechos de autor e institución reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
